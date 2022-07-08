@@ -1,0 +1,147 @@
+body {
+    background: rgb(255, 255, 255);
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 536px;
+    margin: 2rem auto;
+    font-family: "Cormorant Garamond", Light;
+  }
+  
+ 
+  ol {
+      padding-left: 0;
+  }
+  
+  .crumb {
+      margin-right: 2em;
+      display: inline;
+      font-family: "Cormorant Garamond", Light;
+      color: #666A86;
+      font-size: 20px;
+  }
+
+  .about {
+    margin-left: 26em;
+      display: inline;
+      color:rgb(255, 255, 255);
+      font-family: "Cormorant Garamond", Light; 
+}
+  
+  a {
+      color: #666A86;
+  }
+  a:link { text-decoration: none; }
+  a:visited { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:active { text-decoration: none; }
+
+
+  
+  h1 {
+    color: #282828
+  }
+
+
+body {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#box {
+  text-align: center;
+}
+
+/* #box1{
+position: absolute;
+width: 750px;
+height: 100px;
+left: 96px;
+top: 681px;
+background: #A4BF9B;
+}
+#box2{
+  position: absolute;
+  width: 750px;
+  height: 100px;
+  left: 96px;
+  top: 681px;
+  background: #A4BF9B;
+  }
+  #box3{
+    position: absolute;
+    width: 750px;
+    height: 100px;
+    left: 96px;
+    top: 81px;
+    background: #A4BF9B;
+    }
+    #box4{
+      position: absolute;
+      width: 750px;
+      height: 100px;
+      left: 96px;
+      top: 681px;
+      background: #A4BF9B;
+      } */
+#worry {
+  box-sizing: border-box;
+}
+
+#worry {
+  margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(160, 186, 238);
+    font-family: sans-serif;
+}
+
+#mainWorry{
+  margin-top: 20px;
+  min-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px gray;
+}
+
+#worryInput {
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+}
+
+#worryUl {
+  font-size: 24px;
+    width: 100%;
+}
+
+li {
+  cursor: pointer;
+}
+
+.checked {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+#worrybutton {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-weight: bold;
+  background: rgb(160, 186, 238);
+  color: white;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
