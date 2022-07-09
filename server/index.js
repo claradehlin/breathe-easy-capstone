@@ -10,16 +10,30 @@ const app = express()
 app.use(cors());
 app.use(express.json());
 
-app.post('/seed', seed)
-
 app.get('/api/reason', getReason)
 app.post('/api/reason', createReason)
 app.delete('/api/reason/:id', deleteReason)
 
 
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../index.html'))
-// })
+app.get('/home', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/home.html'))
+})
+app.get('/homecss', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/home.css'))
+})
+app.get('/homejs', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/home.js'))
+})
+app.get('/distraction', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/distraction.html'))
+})
+app.get('/distractioncss', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/distraction.css'))
+})
+app.get('/distractionjs', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/distraction.js'))
+})
+
 
 // app.get('/css', (req, res) => {
 //     res.sendFile(path.join(__dirname, '../styles.css'))

@@ -48,19 +48,17 @@ module.exports = {
             ('humans can smell oncoming rain better than sharks can smell blood')
             
             `
-    ).then(dbRes => res.status(200).send(dbRes[0]))
-},
+        ).then(dbRes => res.status(200).send(dbRes[0]))
+    },
+    createReason: (req, res) => {
+        let { reason } = req.body
 
-            createReason: (req, res) => {
-                let { reason } = req.body
-        
-                sequelize.query(`
-                INSERT INTO reasons (reason)
-                    VALUES ('${reason}')
-                `)
-                .then(dbRes => res.status(200).send(dbRes[0]))
-            },
-
+        sequelize.query(`
+        INSERT INTO reasons (reason)
+            VALUES ('${reason}');
+        `)
+        .then(dbRes => res.status(200).send(dbRes[0]))
+    },
     getReason: (req, res) => {
         sequelize.query(
             `select * from reasons
@@ -73,5 +71,9 @@ module.exports = {
         let randomReason = reasons[randomIndex];
       
         res.status(200).send(randomReason);
+    },
+    deleteReason: (req, res) => {
+        const id = req.params.id
+
     }
 }
