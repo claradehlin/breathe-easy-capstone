@@ -15,22 +15,22 @@ app.post('/api/reason', createReason)
 app.delete('/api/reason/:id', deleteReason)
 
 
-app.get('/home', (req, res) => {
+app.get('/html', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/home.html'))
 })
-app.get('/home', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/home.css'))
+app.get('/css', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/styles.css'))
 })
-app.get('/home', (req, res) => {
+app.get('/js', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/home.js'))
 })
-app.get('/distraction', (req, res) => {
+app.get('/html1', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/distraction.html'))
 })
-app.get('/distraction', (req, res) => {
+app.get('/css1', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/distraction.css'))
 })
-app.get('/distraction', (req, res) => {
+app.get('/js1', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/distraction.js'))
 })
 
