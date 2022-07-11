@@ -6,7 +6,8 @@ const getReason = (event) => {
     axios.get("http://localhost:4005/api/reason")
         .then(res => {
             const data = res.data;
-            alert(data);
+            console.log(res.data)
+            alert(data[Math.floor(Math.random() * res.data.length + 1)].reason);
     });
 };
 
