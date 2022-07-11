@@ -4,9 +4,10 @@ const reasonForm = document.getElementById("reasonForm")
 const getReason = (event) => {
     event.preventDefault()
     axios.get("https://breathe-easy-capstone.herokuapp.com/api/reason")
-        .then(res => {
-            const data = res.data;
-            alert(data);
+    .then(res => {
+        const data = res.data;
+        console.log(res.data)
+        alert(data[Math.floor(Math.random() * res.data.length + 1)].reason);
     });
 };
 
