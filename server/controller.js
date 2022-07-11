@@ -61,7 +61,7 @@ module.exports = {
     },
     getReason: (req, res) => {
         sequelize.query(
-            `select * from reasons
+            `select all from reasons;
             `
             ).then(dbRes => res.status(200).send(dbRes[0]))
 

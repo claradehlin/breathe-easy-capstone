@@ -18,19 +18,19 @@ app.delete('/api/reason/:id', deleteReason)
 app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/home.html'))
 })
-app.get('/homecss', (req, res) => {
+app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/home.css'))
 })
-app.get('/homejs', (req, res) => {
+app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/home.js'))
 })
 app.get('/distraction', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/distraction.html'))
 })
-app.get('/distractioncss', (req, res) => {
+app.get('/distraction', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/distraction.css'))
 })
-app.get('/distractionjs', (req, res) => {
+app.get('/distraction', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/distraction.js'))
 })
 
