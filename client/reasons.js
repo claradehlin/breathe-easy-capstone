@@ -3,7 +3,8 @@ const reasonForm = document.getElementById("reasonForm")
 
 const getReason = (event) => {
     event.preventDefault()
-    axios.get("https://breathe-easy-capstone.herokuapp.com/reason")
+    console.log('jared wuz here!')
+    axios.get("/reason")
     .then(res => {
         const data = res.data;
             console.log(res.data)
