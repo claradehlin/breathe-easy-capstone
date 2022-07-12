@@ -12,14 +12,11 @@ app.use(express.json());
 
 
 
-<<<<<<< HEAD
-=======
 app.get('/reason', getReason)
 app.post('/reason', createReason)
 app.delete('/reason/:id', deleteReason)
 
 
->>>>>>> heroku
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/home.html'))
 })
@@ -47,14 +44,6 @@ app.get('/js2', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/about.js'))
 })
 
-<<<<<<< HEAD
-app.get('/css', (req, res) => {
-    res.sendFile(path.join(__dirname, '../styles.css'))
-})
-
-app.get('/js', (req, res) => {
-    res.sendFile(path.join(__dirname, '../index.js'))
-=======
 app.get('/html3', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/reasons.html'))
 })
@@ -95,7 +84,6 @@ app.get('/js7', (req, res) => {
 
 app.get('/js8', (req, res) => {
     res.sendFile(path.join(__dirname, '../server/controller.js'))
->>>>>>> heroku
 })
 
 const port = process.env.PORT || 4005
