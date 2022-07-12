@@ -61,16 +61,17 @@ module.exports = {
     },
     getReason: (req, res) => {
         sequelize.query(
-            `select all from reasons;
+            `select reason from reasons
             `
-            ).then(dbRes => res.status(200).send(dbRes[0]))
+            ).then(dbRes => 
+                res.status(200).send(dbRes[0]))
 
       
         // choose random compliment
-        let randomIndex = Math.floor(Math.random() * reasons.length);
-        let randomReason = reasons[randomIndex];
+        // let randomIndex = Math.floor(Math.random() * reasons.length);
+        // let randomReason = reasons[randomIndex];
       
-        res.status(200).send(randomReason);
+        // res.status(200).send(randomReason);
     },
     deleteReason: (req, res) => {
         const id = req.params.id
