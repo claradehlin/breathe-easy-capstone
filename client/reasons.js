@@ -22,7 +22,7 @@ const addReason = (event) => {
         reason: reasonInput.value
     }
 
-    axios.post("https://breathe-easy-capstone.herokuapp.com/reason", bodyObject)
+    axios.post("/reason", bodyObject)
     .then(function (response) {
         alert('added your reason! :)')
     })
