@@ -86,6 +86,10 @@ app.get('/js8', (req, res) => {
     res.sendFile(path.join(__dirname, '../server/controller.js'))
 })
 
+app.get('/venmo', (req, res) => {
+    res.sendFile(path.join(__dirname, '../documents/venmo.jpg'))
+})
+
 const port = process.env.PORT || 4005
 
 app.listen(port, () => console.log(`up on ${port}`))
