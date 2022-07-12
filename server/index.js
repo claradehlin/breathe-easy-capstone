@@ -88,4 +88,4 @@ app.get('/js8', (req, res) => {
 
 const port = process.env.PORT || 4005
 
-app.listen(SERVER_PORT, () => console.log(`up on ${SERVER_PORT}`))
+app.listen(port, () => console.log(`up on ${port}`))
