@@ -15,7 +15,7 @@ app.post('/api/reason', createReason)
 app.delete('/api/reason/:id', deleteReason)
 
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/home.html'))
 })
 app.get('/homecss', (req, res) => {
@@ -35,13 +35,13 @@ app.get('/distractionjs', (req, res) => {
 })
 
 
-// app.get('/css', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../styles.css'))
-// })
+app.get('/css', (req, res) => {
+    res.sendFile(path.join(__dirname, '../styles.css'))
+})
 
-// app.get('/js', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../index.js'))
-// })
+app.get('/js', (req, res) => {
+    res.sendFile(path.join(__dirname, '../index.js'))
+})
 
 const port = process.env.PORT || 4005
 
