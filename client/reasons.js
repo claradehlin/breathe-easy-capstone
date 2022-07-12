@@ -3,7 +3,7 @@ const reasonForm = document.getElementById("reasonForm")
 
 const getReason = (event) => {
     event.preventDefault()
-    axios.get("https://breathe-easy-capstone.herokuapp.com/api/reason")
+    axios.get("https://breathe-easy-capstone.herokuapp.com/reason")
     .then(res => {
         const data = res.data;
             console.log(res.data)
@@ -21,7 +21,7 @@ const addReason = (event) => {
         reason: reasonInput.value
     }
 
-    axios.post("https://breathe-easy-capstone.herokuapp.com/api/reason", bodyObject)
+    axios.post("https://breathe-easy-capstone.herokuapp.com/reason", bodyObject)
     .then(function (response) {
         alert('added your reason! :)')
     })

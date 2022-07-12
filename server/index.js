@@ -11,9 +11,9 @@ app.use(cors());
 app.use(express.json());
 
 
-app.get('/api/reason', getReason)
-app.post('/api/reason', createReason)
-app.delete('/api/reason/:id', deleteReason)
+app.get('/reason', getReason)
+app.post('/reason', createReason)
+app.delete('/reason/:id', deleteReason)
 
 
 app.get('/', (req, res) => {
