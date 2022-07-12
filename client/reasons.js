@@ -6,8 +6,9 @@ const getReason = (event) => {
     axios.get("https://breathe-easy-capstone.herokuapp.com/api/reason")
     .then(res => {
         const data = res.data;
-        console.log(res.data)
-        alert(data[Math.floor(Math.random() * res.data.length + 1)].reason);
+            alert(data);
+            console.log(res.data)
+            alert(data[Math.floor(Math.random() * res.data.length + 1)].reason);
     });
 };
 
